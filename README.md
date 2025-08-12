@@ -1,4 +1,3 @@
-
 # 🧠 GenAI Log Analyzer
 
 An interactive, modular log analysis tool powered by OpenAI's GenAI. Supports multi-run parsing, anomaly detection, and natural-language querying via a Streamlit GUI.
@@ -14,10 +13,11 @@ An interactive, modular log analysis tool powered by OpenAI's GenAI. Supports mu
 
 ## 📦 Installation
 
+```bash
 git clone https://github.com/your-username/genai-log-analyzer.git
 cd genai-log-analyzer
 pip install -r requirements.txt
-
+```
 
 > 💡 Requires Python 3.9+ and an OpenAI API key.
 
@@ -25,14 +25,15 @@ pip install -r requirements.txt
 
 ### CLI Mode
 
-
+```bash
 python log_analyzer.py --input logs/app.log --query "Summarize errors by user"
-
+```
 
 ### GUI Mode
 
-
+```bash
 streamlit run gui.py
+```
 
 - Upload your log file  
 - Enter a natural-language prompt (e.g. “What anomalies occurred yesterday?”)  
@@ -62,8 +63,9 @@ Sample logs for testing are available in the `logs/` directory.
 
 Set your OpenAI API key as an environment variable:
 
+```bash
 export OPENAI_API_KEY=your-key-here
-
+```
 
 ## 🧼 To-Do
 
