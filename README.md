@@ -52,8 +52,8 @@ streamlit run gui.py
 |----------------|------------------------------------------|
 | `parser.py`    | Multi-pattern log parsing and extraction |
 | `agent.py`     | GenAI integration for summarization      |
-| `gui.py`       | Streamlit interface                      |
-| `utils.py`     | Duration, threading, and anomaly logic   |
+| `app.py`       | Streamlit interface                      |
+| `core.py`     | Duration, threading, and anomaly logic   |
 
 ## 📁 Sample Logs
 
