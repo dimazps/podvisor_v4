@@ -1,0 +1,25 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: AzureWebApp@1
+  inputs:
+    # This specifies your Azure subscription service connection
+    azureSubscription: 'testing_azure_pipeline'
+    # This specifies the name of your web app
+    appName: 'testing_app_name'
+    # This specifies the location of the app package or files to be deployed
+    package: '$(Build.ArtifactStagingDirectory)'
+
+- script: |
+    npm install
+    npm run build
+  displayName: 'npm install and build'
