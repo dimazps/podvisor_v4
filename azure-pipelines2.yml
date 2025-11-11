@@ -19,7 +19,4 @@ steps:
     # This specifies the location of the app package or files to be deployed
     package: '$(Build.ArtifactStagingDirectory)'
 
-- script: |
-    npm install
-    npm run build
-  displayName: 'npm install and build'
+
