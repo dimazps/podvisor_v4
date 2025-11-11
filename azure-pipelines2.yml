@@ -15,7 +15,7 @@ steps:
     # This specifies your Azure subscription service connection
     azureSubscription: 'testing_azure_pipeline'
     # This specifies the name of your web app
-    appName: 'testing_app_name'
+    appName: 'testingwebapp123'
     # This specifies the location of the app package or files to be deployed
     package: '$(Build.ArtifactStagingDirectory)'
 
